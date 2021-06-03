@@ -12,7 +12,7 @@ class BookFactory extends Factory
     public function definition(): array
     {
     	return [
-            'title'      => $this->faker->words(4),
+            'title'      => $this->faker->words(4, true),
             'author'     => $this->faker->name(),
             'page_count' => $this->faker->randomNumber(3, false)
     	];
